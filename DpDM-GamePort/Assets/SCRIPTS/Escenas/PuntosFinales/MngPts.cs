@@ -74,7 +74,7 @@ public class MngPts : MonoBehaviour
 		TiempEspReiniciar -= Time.deltaTime;
 		if(TiempEspReiniciar <= 0 )
 		{
-			Application.LoadLevel(2);
+			Application.LoadLevel(0);
 		}
 		
 		

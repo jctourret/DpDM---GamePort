@@ -17,7 +17,14 @@ public class Bolsa : MonoBehaviour
 	void Start () 
 	{
 		Monto = Pallet.Valores.Valor2;
-		
+		if (GameDifficulty.instance.hardModeOn)
+		{
+			int rand = Random.Range(1,4);
+			if (rand == 1)
+			{
+				Destroy(gameObject);
+			}
+		}
 		
 		if(Particulas != null)
 			Particulas.SetActive(false);

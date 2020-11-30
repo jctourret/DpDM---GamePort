@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuButtons : MonoBehaviour
 {
-    public void OnPlayButton()
+    public void onSinglePlayerButton()
+    {
+        SceneManager.LoadScene("SP");
+    }
+    public void OnMultiplayerButton()
     {
         SceneManager.LoadScene("conduccion9");
     }

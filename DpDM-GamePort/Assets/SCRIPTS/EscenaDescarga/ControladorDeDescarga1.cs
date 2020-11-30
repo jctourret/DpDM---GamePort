@@ -1,18 +1,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class ControladorDeDescarga : MonoBehaviour 
+public class ControladorDeDescarga1 : MonoBehaviour 
 {
 	System.Collections.Generic.List<Pallet.Valores> Ps = new System.Collections.Generic.List<Pallet.Valores>();
 	
 	int Contador = 0;
 	float hardModeMultiplier = 1.2f;
 	
-	Deposito2 Dep;
+	Deposito3 Dep;
 	
 	public GameObject[] Componentes;//todos los componentes que debe activar en esta escena
 	
-	public Player Pj;//jugador
+	public Player1 Pj;//jugador
 	MeshCollider CollCamion;
 	
 	public Pallet PEnMov = null;
@@ -37,7 +37,7 @@ public class ControladorDeDescarga : MonoBehaviour
 	float TempoBonus;
 	
 	
-	public AnimMngDesc ObjAnimado;
+	public AnimMngDesc1 ObjAnimado;
 
 	
 	//--------------------------------------------------------------//
@@ -95,7 +95,7 @@ public class ControladorDeDescarga : MonoBehaviour
 	
 	//--------------------------------------------------------------//
 			
-	public void Activar(Deposito2 d)
+	public void Activar(Deposito3 d)
 	{
 		Dep = d;//recibe el deposito para que sepa cuando dejarlo ir al camion
 		CamaraConduccion.SetActiveRecursively(false);//apaga la camara de conduccion
