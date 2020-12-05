@@ -6,7 +6,7 @@ public class HardObstacules : MonoBehaviour
 {
     void Start()
     {
-        if (!GameDifficulty.instance.hardModeOn)
+        if (GameDifficulty.instance != null &&!GameDifficulty.instance.hardModeOn)
         {
             Destroy(gameObject);
         }   

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 /// <summary>
 /// clase encargada de TODA la visualizacion
@@ -11,6 +12,8 @@ public class Visualizacion : MonoBehaviour
 	public enum Lado{Izq, Der}
 	public Lado LadoAct;
 	
+	public enum mode { single,multi};
+	public mode ModoJuego;
 	ControlDireccion Direccion;
 	Player Pj;
 	
@@ -152,7 +155,15 @@ public class Visualizacion : MonoBehaviour
 	
 	public void CambiarACalibracion()
 	{
-		CamCalibracion.enabled = true;
+		switch (ModoJuego)
+		{
+			case mode.single:
+				CamCalibracion.enabled = false;
+				break;
+			case mode.multi:
+				CamCalibracion.enabled = true;
+				break;
+		}
 		CamConduccion.enabled = false;
 		CamDescarga.enabled = false;
 	}

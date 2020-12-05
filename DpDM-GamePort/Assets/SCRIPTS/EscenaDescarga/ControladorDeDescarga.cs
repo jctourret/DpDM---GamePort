@@ -59,7 +59,7 @@ public class ControladorDeDescarga : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (GameDifficulty.instance.hardModeOn)
+		if (GameDifficulty.instance != null && GameDifficulty.instance.hardModeOn)
 		{
 			if (PEnMov != null)
 			{

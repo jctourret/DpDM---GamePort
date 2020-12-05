@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 	
 	public static GameManager Instancia;
 	
+	public enum gamemode { single,multi};
+	public gamemode mode;
+
 	public float TiempoDeJuego = 60;
 	
 	public enum EstadoJuego{Calibrando, Jugando, Finalizado}
@@ -117,6 +120,15 @@ public class GameManager : MonoBehaviour
 					FinTutorial(1);
 				}
 			}
+				switch (mode)
+				{
+					case gamemode.single:
+						FinCalibracion(1);
+						FinTutorial(1);
+						break;
+					case gamemode.multi:
+						break;
+				}
 
                 if (PlayerInfo1.PJ == null) {
                     PlayerInfo1 = new PlayerInfo(0, Player1);
@@ -203,9 +215,18 @@ public class GameManager : MonoBehaviour
 			//tambien se puede hacer alguna animacion, es el tiempo previo a la muestra de pts
 			
 			TiempEspMuestraPts -= Time.deltaTime;
-			if(TiempEspMuestraPts <= 0)
-				Application.LoadLevel(Application.loadedLevel +1);				
-			
+				if (TiempEspMuestraPts <= 0)
+				{
+					switch (mode)
+					{
+						case gamemode.single:
+							Application.LoadLevel(4);
+							break;
+						case gamemode.multi:
+							Application.LoadLevel(3);
+							break;
+					}
+				}
 			break;		
 		}
 	}

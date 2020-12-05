@@ -67,7 +67,6 @@ public class ControlDireccion : MonoBehaviour
 				break;
         }		
 	}
-
 	public float GetGiro()
 	{
 		/*

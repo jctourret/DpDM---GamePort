@@ -12,7 +12,7 @@ public class PalletMover : ManejoPallets {
         Joystick
     }
     public GameObject grab;
-    public bool shouldGrab=false;
+    bool shouldGrab = false;
     public GameObject hold;
     bool shouldHold = false;
     public GameObject deposit;

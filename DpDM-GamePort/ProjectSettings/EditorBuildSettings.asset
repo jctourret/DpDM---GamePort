@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/ESCENAS/conduccion9.unity
     guid: 6a990c81459e9b04c87adbbd2d639bbd
   - enabled: 1
+    path: Assets/ESCENAS/conduccion10.unity
+    guid: a642efcdc1ac7e140ac0fc979c57f1d5
+  - enabled: 1
     path: Assets/ESCENAS/PtsFinal.unity
     guid: 3fed48a553168ae458bbf014c512a5cd
   - enabled: 1
-    path: Assets/ESCENAS/SP.unity
-    guid: df98dd60a8df67842a91ec292cbba683
+    path: Assets/ESCENAS/PtsFinalSingle.unity
+    guid: c4b53bfc10a19f74a8f7786637f60ce9
   m_configObjects: {}
