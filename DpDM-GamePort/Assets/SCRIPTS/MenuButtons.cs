@@ -6,7 +6,7 @@ public class MenuButtons : MonoBehaviour
 {
     public void onSinglePlayerButton()
     {
-        SceneManager.LoadScene("SP");
+        SceneManager.LoadScene("conduccion10");
     }
     public void OnMultiplayerButton()
     {

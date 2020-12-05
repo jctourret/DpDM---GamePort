@@ -48,7 +48,7 @@ public class MngPts : MonoBehaviour
 		   Input.GetKeyDown(KeyCode.Return) ||
 		   Input.GetKeyDown(KeyCode.Mouse0))
 		{
-			Application.LoadLevel(2);
+			Application.LoadLevel(0);
 		}
 		
 		//REINICIAR
@@ -67,7 +67,7 @@ public class MngPts : MonoBehaviour
 		//CALIBRACION DEL KINECT
 		if(Input.GetKeyDown(KeyCode.Backspace))
 		{
-			Application.LoadLevel(3);
+			Application.LoadLevel(0);
 		}		
 		
 		
